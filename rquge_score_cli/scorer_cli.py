@@ -16,12 +16,6 @@ def main():
         help='path to the span scorer model',
     )
 
-    parser.add_argument(
-        "--qa_model_path",
-        type=str,
-        default=None,
-        help='path to QA model (either local path or name of the model in huggingface hub',
-    )
 
     parser.add_argument(
         "--context",
@@ -68,7 +62,7 @@ def main():
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-    rquge_model = RQUGE(sp_scorer_path=args.sp_scorer_path, qa_model_path=args.qa_model_path, device=device)
+    rquge_model = RQUGE(sp_scorer_path=args.sp_scorer_path, device=device)
 
     print("RQUGE model is created....\n"
           "Computing the score....")

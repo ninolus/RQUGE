@@ -1,4 +1,4 @@
-RQUGE🤗: Reference-Free Metric for Evaluating Question Generation by Answering the Question
+RQUGE🤗 (adapted): Reference-Free Metric for Evaluating Question Generation by Answering the Question
 =================
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
 [![arxiv](https://img.shields.io/badge/arXiv-2211.01482-b31b1b.svg)](https://arxiv.org/abs/2211.01482)
@@ -16,6 +16,9 @@ We propose RQUGE, a **R**eference-free **QU**estion **G**eneration **E**valuatio
   <img src="main_model.jpg" width="700"/>
 </p>
 
+Adaptations
+---------------
+- Changed scorer to use a given predicted answer instead of using a QA model with given context an Question
 
 Contents
 ---------------
